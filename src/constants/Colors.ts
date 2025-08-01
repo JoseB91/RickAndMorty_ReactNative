@@ -1,0 +1,26 @@
+export const colors = {
+  primary: '#2ecc71',
+  background: '#f8f9fa',
+  card: '#ffffff',
+  text: '#2c3e50',
+  border: '#e9ecef',
+  notification: '#ff3b30',
+  error: '#e74c3c',
+  success: '#27ae60',
+  warning: '#f39c12',
+  info: '#3498db',
+  white: '#ffffff',
+  black: '#000000',
+  gray: {
+    100: '#f8f9fa',
+    200: '#e9ecef',
+    300: '#dee2e6',
+    400: '#ced4da',
+    500: '#adb5bd',
+    600: '#6c757d',
+    700: '#495057',
+    800: '#343a40',
+    900: '#212529',
+  },
+  // Add any additional colors here
+};
