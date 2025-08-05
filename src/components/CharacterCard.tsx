@@ -30,7 +30,7 @@ const CharacterCard: React.FC<CharacterCardProps> = ({ character, onPress }) => 
             {renderImage()}
           </View>
           <View style={styles.details}>
-            <Text style={styles.name} numberOfLines={1} ellipsizeMode="tail">
+            <Text style={styles.name} numberOfLines={1}>
               {character.name}
             </Text>
             <Text style={styles.info} numberOfLines={1}>

@@ -29,7 +29,7 @@ const CharactersList: React.FC = () => {
     error,
     isRefetching,
     refetch,
-  } = useQuery<Character[]>({
+  } = useQuery<Character[], Error>({
     queryKey: CHARACTERS_QUERY_KEY,
     queryFn: fetchCharacters,
     staleTime: 5 * 60 * 1000, // 5 minutes until data is considered stale
@@ -74,7 +74,6 @@ const CharactersList: React.FC = () => {
       removeClippedSubviews
       onRefresh={refetch}
       refreshing={isRefetching}
-      refreshControl={undefined} // Fix for TypeScript error
       ListEmptyComponent={
         <View style={styles.centered}>
           <Text>No characters found</Text>
